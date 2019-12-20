@@ -13,6 +13,7 @@
                     <option disabled>Выберите группу</option>
                     <option value="Группа 8.30">Группа 8.30</option>
                     <option value="Группа 12.00">Группа 12.00</option>
+                    <option value="Группа 18.00">Группа 18.00</option>
                     <option value="-">-</option>
                 </select>
             </p>

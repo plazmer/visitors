@@ -16,7 +16,7 @@ def visitors_list():
 
     conn = sqlite3.connect('visitors.db')
     c = conn.cursor()
-    c.execute("SELECT id, groups, fio, datetime FROM visitors ORDER BY id, groups")
+    c.execute("select SUBSTR(datetime,1, 10) as date, fio from visitors group by date, fio ORDER BY date, fio;")
     result = c.fetchall()
     c.close()
 
